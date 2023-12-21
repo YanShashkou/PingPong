@@ -13,6 +13,14 @@ class Ball(turtle.Turtle):
         y_cord = self.ycor() + self.y_move
         self.goto(x_cord, y_cord)
 
+    def increase_speed(self):
+        self.x_move *= 1.0001
+        self.y_move *= 1.0001
+
 
     def bounce(self):
         self.y_move *= -1
+
+
+    def padbounce(self):
+        self.x_move *= -1
